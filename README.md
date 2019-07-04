@@ -4,3 +4,14 @@
 <h1 align="center">Welcome to Wabbit!</h1>
 <br />
 Wabbit is a minimalist extension to the Create React App template, with FlowJS, TailwindCSS, and ESLint built in and <b>ready-to-go</b> for any project.
+
+### Getting Started
+
+Getting started is as simple as 
+```bash
+  git clone git@github.com:mitchbne/wabbit.git
+
+  yarn install
+
+  yarn start
+```
