@@ -1,0 +1,54 @@
+{
+  "name": "wabbit",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
+  },
+  "scripts": {
+    "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.config.js -o src/css/styles.css",
+    "start": "yarn run tailwind:css && react-scripts start",
+    "build": "yarn run tailwind:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.14.2",
+    "flow-bin": "^0.102.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^6.1.0",
+    "rxjs-compat": "^6.5.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "tailwindcss": "^1.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run flow && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.jsx": "eslint --fix",
+      "src/css/**/*.{css,scss}": "stylelint"
+    }
+  }
+}
