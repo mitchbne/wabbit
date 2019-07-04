@@ -48,7 +48,7 @@
   },
   "lint-staged": {
     "linters": {
-      "src/**/*.jsx": "eslint --fix",
+      "src/**/*.jsx": ["eslint --fix", "git add"],
       "src/css/**/*.{css,scss}": "stylelint"
     }
   }
