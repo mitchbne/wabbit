@@ -1,7 +1,10 @@
-const DEFAULT_STATE = {}
+import { ReduxState } from "../types"
+import { ActionTypes } from "../actions/types"
 
-const rootReducer = (state = DEFAULT_STATE, action) => {
-  console.log(action, state)  // eslint-disable-line 
+const DEFAULT_STATE: ReduxState = {}
+
+const rootReducer = (state: ReduxState = DEFAULT_STATE, action: ActionTypes) => {
+  console.log(action)  // eslint-disable-line
   switch(action.type){
   case "ACTION":
     return {

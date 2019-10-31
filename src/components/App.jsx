@@ -3,9 +3,16 @@ import React, { Component } from "react"
 import { connect } from "react-redux"
 import action from "../redux/actions/actions"
 
-type Props = {
+type OwnProps = {} 
+type ReduxProps = {
   action: () => void
 }
+
+type Props = {
+  ...OwnProps,
+  ...ReduxProps,
+}
+
 
 export class App extends Component<Props> {
   componentDidMount() {
@@ -30,4 +37,4 @@ const mapDispatchToProps = (dipsatch) => ({
   action: () => dipsatch(action({ test: "data" }))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(App)
+export default connect<Props, OwnProps, _, _, _, _>(mapStateToProps, mapDispatchToProps)(App)
