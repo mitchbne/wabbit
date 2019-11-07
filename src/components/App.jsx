@@ -16,9 +16,6 @@ type Props = {
 
 
 export class App extends Component<Props> {
-  constructor(props: Props){
-    super(props)
-  }
   componentDidMount() {
     // $FlowFixMe
     this.props.action()

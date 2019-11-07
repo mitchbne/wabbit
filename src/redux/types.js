@@ -8,6 +8,4 @@ export type ReduxState = {||}
 export type ReduxReducer = Redux.Reducer<ReduxState, ActionTypes>
 export type ReduxStore = Redux.Store<ReduxState, ActionTypes>
 type GetState = () => ReduxState
-
-type Thunk<A> = ((ReduxDispatch, GetState) => ?Promise<A>) => any // eslint-disable-line flowtype/no-weak-types
-export type ReduxDispatch = Redux.Dispatch<ActionTypes> & Thunk<mixed>
+export type ReduxDispatch = Redux.Dispatch<ActionTypes> & ((ReduxDispatch, GetState) => ?Promise<mixed>) => any // eslint-disable-line flowtype/no-weak-types
