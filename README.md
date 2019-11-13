@@ -9,7 +9,7 @@ React Wabbit is a minimalist extension to the Create React App template, with Fl
 
 Getting started is as simple as 
 ```bash
-  git clone git@github.com:mitchbne/wabbit.git
+  git clone git@github.com:mitchbne/reactwabbit.git
 
   yarn install
 
