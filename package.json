@@ -1,7 +1,15 @@
 {
   "name": "wabbit",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "author": "Mitch Smith <mitchpsmith1998@egmail.com>",
+  "description": "A template for creating React and Tailwind CSS Projects",
+  "keywords": ["tailwind", "react", "wabbit"],
+  "repository": {
+    "url": "https://github.com/mitchbne/wabbit",
+    "type": "git"
+  },
+  "license": "MIT",
+  "private": false,
   "dependencies": {
     "cssnano": "^4.1.10",
     "react": "^16.11.0",
