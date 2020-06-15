@@ -9,7 +9,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      height: { "96": "32rem" },
       fontFamily: { sans: ["Inter var", ...defaultTheme.fontFamily.sans] },
       // screens: {
       // print: { raw: "print" }, // use utilities like print:text-black
