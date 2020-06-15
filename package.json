@@ -19,7 +19,7 @@
     "build:css": "NODE_ENV=production postcss src/css/tailwind.css -o src/css/styles.css",
     "watch:css": "postcss src/css/tailwind.css -o src/css/styles.css -w",
     "start": "yarn run flowtyped && concurrently \"yarn watch:css\" \"yarn start:js\"",
-    "build": "yarn run build:css && yarn run build:js",
+    "build": "GENERATE_SOURCEMAP=false yarn run build:css && yarn run build:js",
     "flowtyped": "yarn flow-typed install",
     "start:js": "react-scripts start",
     "build:js": "react-scripts build",
