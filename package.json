@@ -16,8 +16,8 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "build:css": "NODE_ENV=production postcss src/css/tailwind.src.css -o src/css/styles.css",
-    "watch:css": "postcss src/css/tailwind.src.css -o src/css/styles.css -w",
+    "build:css": "NODE_ENV=production postcss src/css/tailwind.css -o src/css/styles.css",
+    "watch:css": "postcss src/css/tailwind.css -o src/css/styles.css -w",
     "start": "yarn run flowtyped && concurrently \"yarn watch:css\" \"yarn start:js\"",
     "build": "yarn run build:css && yarn run build:js",
     "flowtyped": "yarn flow-typed install",
@@ -42,7 +42,6 @@
     ]
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.0.6",
     "autoprefixer": "^9.7.4",
     "concurrently": "^5.1.0",
     "cssnano": "^4.1.10",

@@ -11,10 +11,10 @@ module.exports = {
     extend: {
       height: { "96": "32rem" },
       fontFamily: { sans: ["Inter var", ...defaultTheme.fontFamily.sans] },
-      // screens: {
+      screens: {
       // print: { raw: "print" }, // use utilities like print:text-black
-      // dark: { raw: "(prefers-color-scheme: dark)" }, // use utilities like dark:text-white
-      // },
+        dark: { raw: "(prefers-color-scheme: dark)" }, // use utilities like dark:text-white
+      },
     },
     container: { center: true },
   },
