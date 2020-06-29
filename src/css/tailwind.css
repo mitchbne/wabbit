@@ -7,7 +7,6 @@ In VSCode add the following to settings.json
     "css.validate": false,
     "scss.validate": false
 }
-
  */
 
 @tailwind base;
