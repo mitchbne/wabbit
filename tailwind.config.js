@@ -7,6 +7,7 @@ module.exports = {
     "./src/**/*.js",
     "./public/index.html",
   ],
+  future: "all",
   theme: {
     extend: {
       fontFamily: { sans: ["Inter var", ...defaultTheme.fontFamily.sans] },
