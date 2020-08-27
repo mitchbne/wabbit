@@ -1,9 +1,16 @@
+<h2 align="center">
+  Wabbit
+</h2>
+
 <p align="center">
-  <img src="https://i.ibb.co/GtnKZGp/wabbit.jpg" alt="Wabbit Image">
+  A template starter repository using Create React App, TailwindCSS, Typescript and ESlint.
 </p>
-<h1 align="center">Welcome to Wabbit!</h1>
-<br />
-React Wabbit is a minimalist extension to the Create React App template, with Typescript, TailwindCSS, and ESLint built in and <b>ready-to-go</b> for any project.
+
+<p align="center">
+  <a href="https://github.com/mitchbne/wabbit/actions"><img src="https://img.shields.io/github/workflow/status/mitchbne/wabbit/CI/master?style=flat-square"></a>
+</p>
+
+---
 
 ### Getting Started
 
