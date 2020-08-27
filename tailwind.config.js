@@ -3,8 +3,10 @@ const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
   purge: [
+    "./src/**/*.ts",
+    "./src/**/*.jx",
+    "./src/**/*.tsx",
     "./src/**/*.jsx",
-    "./src/**/*.js",
     "./public/index.html",
   ],
   future: "all",
