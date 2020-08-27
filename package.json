@@ -48,7 +48,6 @@
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-underscore-to-lodash": "^0.0.2",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.7.2",
     "typescript": "^3.9.7"
