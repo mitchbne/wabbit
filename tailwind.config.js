@@ -1,4 +1,5 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
+const colors = require("tailwindcss/colors")
 
 module.exports = {
   purge: {
@@ -11,19 +12,20 @@ module.exports = {
       "./public/index.html",
     ],
   },
+  darkMode: "media",
   future: "all",
   theme: {
+    colors,
     extend: {
       fontFamily: { sans: ["Inter var", ...defaultTheme.fontFamily.sans] },
-      screens: {
-      // print: { raw: "print" }, // use utilities like print:text-black
-        dark: { raw: "(prefers-color-scheme: dark)" }, // use utilities like dark:text-white
-      },
+      screens: { print: { raw: "print" } }, // use utilities like print:text-black
+      container: { center: true },
+      variants: {},
     },
-    container: { center: true },
+    plugins: [
+      require("@tailwindcss/forms"),
+      require("@tailwindcss/typography"),
+      require("@tailwindcss/aspect-ratio"),
+    ],
   },
-  variants: {},
-  plugins: [
-    require("@tailwindcss/ui")({ layout: "sidebar" }),
-  ],
 }
